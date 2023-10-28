@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static("react_build"));
 
 app.get("*", (req, res) => {
-  return res.sendFile(path.resolve(__dirname, "./react_build/index.html"));
+  return res.sendFile(path.resolve("react_build/index.html"));
 });
 
 const PORT = process.env.PORT || 4000;
