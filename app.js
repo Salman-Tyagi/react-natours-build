@@ -57,6 +57,8 @@ const limiter = limit({
 app.use(limiter);
 
 // Serve static files
+app.use(express.static('public'));
+
 app.use(cookieParser());
 
 // Development logging
